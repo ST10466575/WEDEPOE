@@ -1,0 +1,94 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> WEDEPOE— Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">WEDEPOR</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="article.html">Article</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <button id="cartBtn" class="cart-btn">Cart (<span id="cartCount">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Unknown Suspect Designer Clothing</h1>
+        <p class="lead">Limited drops. Hand-finished details. Streetwear inspired by underground art.</p>
+        <a class="btn" href="shop.html">Shop latest drop</a>
+      </div>
+      <div class="hero-right">
+        <img src="assets/hero.jpg" alt="hero" class="hero-image">
+      </div>
+    </section>
+
+    <section class="icons-grid">
+      <h2>Shop our icons</h2>
+      <div class="grid three">
+        <article class="card">
+          <img src="assets/p1.jpg" alt="p1">
+          <h4>USDC Hoodie</h4>
+          <p class="price">$85</p>
+          <a class="btn small" href="product.html?id=1">View</a>
+        </article>
+        <article class="card">
+          <img src="assets/p2.jpg" alt="p2">
+          <h4>Embroidered Jacket</h4>
+          <p class="price">$120</p>
+          <a class="btn small" href="product.html?id=2">View</a>
+        </article>
+        <article class="card">
+          <img src="assets/p3.jpg" alt="p3">
+          <h4>Graphic Tee</h4>
+          <p class="price">$35</p>
+          <a class="btn small" href="product.html?id=3">View</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <h3>Recent Feedback</h3>
+      <div class="grid three">
+        <div class="feedback-card"><strong>“Love the quality”</strong><p>- Jane</p></div>
+        <div class="feedback-card"><strong>“Fit is perfect”</strong><p>- Marco</p></div>
+        <div class="feedback-card"><strong>“Fast shipping”</strong><p>- Priya</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© VS Clothing — Built from wireframes</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a> · <a href="shop.html">Shop</a> · <a href="about.html">About</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- cart drawer (shared) -->
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your cart</h3>
+      <button id="closeCart" class="close">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: $<span id="cartTotal">0</span></div>
+      <button id="checkoutBtn" class="btn">Checkout</button>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

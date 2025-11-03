@@ -1,0 +1,16 @@
+{
+  "name": "wedepoe",
+  "version": "1.0.0",
+  "description": "wedepoe",
+  "main": "index.js",
+  "scripts": {
+    "start" : "lite-server"
+  },
+  "keywords": [],
+  "author": "Umer",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

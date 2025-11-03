@@ -1,0 +1,65 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product — WEDEPOE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">VS</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="article.html">Article</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <button id="cartBtnProd" class="cart-btn">Cart (<span id="cartCountProd">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container product-page">
+    <div class="product-grid">
+      <div class="product-media">
+        <img id="productImage" src="assets/p1.jpg" alt="product image">
+      </div>
+      <div class="product-info">
+        <h1 id="productTitle">Product name</h1>
+        <p id="productPrice" class="price">$0</p>
+        <p id="productDesc">Product description goes here.</p>
+
+        <label for="size">Size</label>
+        <select id="size">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <label for="qty">Quantity</label>
+        <input id="qty" type="number" value="1" min="1" />
+
+        <button id="addToCart" class="btn">Add to cart</button>
+      </div>
+    </div>
+  </main>
+
+  <aside id="cartDrawerProd" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your cart</h3>
+      <button id="closeCartProd" class="close">✕</button>
+    </div>
+    <div id="cartItemsProd" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: $<span id="cartTotalProd">0</span></div>
+      <button id="checkoutBtnProd" class="btn">Checkout</button>
+    </div>
+  </aside>
+
+  <div id="overlayProd" class="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

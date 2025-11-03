@@ -1,0 +1,46 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop - WEDEPOE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">VS</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="article.html">Article</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <button id="cartBtnShop" class="cart-btn">Cart (<span id="cartCountShop">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Shop</h1>
+      <div id="productsGrid" class="grid four"></div>
+    </section>
+  </main>
+
+  <!-- cart drawer shared -->
+  <aside id="cartDrawerShop" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your cart</h3>
+      <button id="closeCartShop" class="close">✕</button>
+    </div>
+    <div id="cartItemsShop" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: $<span id="cartTotalShop">0</span></div>
+      <button id="checkoutBtnShop" class="btn">Checkout</button>
+    </div>
+  </aside>
+  <div id="overlayShop" class="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
